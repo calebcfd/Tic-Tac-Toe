@@ -1,0 +1,84 @@
+
+.overlay {
+    width: 90vmin;
+    height: 90vmin;
+    position: absolute;
+    left: calc((100vw - 90vmin)/2);
+    top: 5vmin;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    margin: 5vmin;
+}
+
+button {
+    margin: auto;
+    width: 30vmin;
+    height: 5vmin;
+    border-radius: 7% / 50%;
+    background-color: aliceblue;
+}
+
+button:hover {
+    transition: background-color .3s ease-out, color .3s ease-out;
+    background-color: green;
+    color: aliceblue;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    width: 90vmin;
+    height: 90vmin;
+    margin: 5vmin auto 5vmin auto;
+    background-color: blue;
+}
+
+.tile {
+    background-color: hsl(16, 25%, 38%);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: aliceblue;
+    width: 20vmin;
+    height: 20vmin;
+}
+
+.circleFiller {
+    border-radius: 50%;
+    background-color: hsl(16, 25%, 38%);
+    width: 14vmin;
+    height: 14vmin;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross {
+    width: 28vmin;
+    height: 3vmin;
+    background-color: aliceblue;
+    position: absolute;
+}
+
+.cross1 {
+    transform: rotate(45deg);
+}
+
+.cross2 {
+    transform: rotate(-45deg);
+}
+
+
